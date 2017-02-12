@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="name_app">Controla tu peso</string>
+    <string name="version">LITE</string>
+    <string name="solo_version_pro">Solo disponible en la versión PRO</string>
+    
+    <string name="principal">Registra tu peso</string>
+    <string name="logros">Objetivos</string>
+    <string name="preferencias">Ajustes</string>
+    <string name="crear_perfil">Crear perfil...</string>
+    <string name="perfil">Perfil</string>
+    <string name="editar_perfil">Editar Perfil</string>
+    <string name="guardar">Guardar</string>
+    <string name="cancelar">Cancelar</string>
+    
+    <string name="deja_titulo">Controla tu peso</string>
+    <string name="continuar">Continuar...</string>
+    <string name="tus_datos">Tus Datos...</string>
+    <string name="alias">Alias</string>
+    <string name="altura">Altura actual en cm</string>
+    <string name="peso">Peso actual en kg</string>
+    <string name="sexo">Sexo</string>
+    <string name="edad">Edad</string>
+    <string name="error_alias">Error, Debes indicar tu Alias</string>
+    <string name="error_altura">Error, Debes indicar tu Altura actual en Centímetros. (ej: 160)</string>
+    <string name="error_peso">Error, Debes indicar tu Peso en Kilogramos. (ej: 60)</string>
+    <string name="error_edad">Error, Debes indicar tu Edad. (ej: 40)</string>
+    <string name="graficos">Gráfico</string>
+    <string name="imagen">Puedes cambiar tu imagen</string>
+    
+    <string name="registrar_peso">Nuevo Peso</string>
+    <string name="registrar_objetivo">Nuevo Objetivo</string>
+    <string name="peso_actual">Peso Actual</string>
+    <string name="objetivo_actual">Objetivo Actual</string>
+    <string name="imc_actual">IMC Actual</string>
+    
+    <string name="fila11">Menor a 16.4</string>
+    <string name="fila12">Delgadez III</string>
+    <string name="fila21">16.5-18.4</string>
+    <string name="fila22">Delgadez II</string>
+    <string name="fila31">18.5-24.9</string>
+    <string name="fila32">Normal</string>
+    <string name="fila41">25-29.9</string>
+    <string name="fila42">Sobrepeso</string>
+    <string name="fila51">30-34.9</string>
+    <string name="fila52">Obesidad I</string>    
+    <string name="fila61">35-39.9</string>
+    <string name="fila62">Obesidad II</string>
+    <string name="fila71">Más de 40</string>
+    <string name="fila72">Obesidad III</string>
+    <string name="nuevo_registro">Nuevo Peso</string>
+    <string name="nuevo_peso">Nuevo Peso en kg</string>
+    <string name="nuevo_descripcion">Observaciones</string>
+    <string name="nuevo_guardar">Guardar</string>
+    <string name="nuevo_cancelar">Cancelar</string>
+    <string name="proximamente">Próximamente...</string>
+    <string name="nuevo_objetivo">Nuevo Objetivo</string>
+    <string name="nuevo_objetivo_fecha">Fecha del Objetivo</string>
+    <string name="lishistorico">Listado de Peso</string>
+    
+    
+    <string name="pre_titulo">Preferencias</string>
+        <string name="pre_acerca_de">Acerca de...</string>
+    <string name="pre_compartir">Compartir aplicación</string>
+    <string name="pre_compartir_apli">Descárgate ya ésta aplicación y controla tu peso diariamente...</string>
+    <string name="prin_comp_titulo">Controla Tu Peso</string>
+    <string name="action_settings">Acción</string>
+     
+    <string name="grafico_titulo">Gráfico de Pesos</string>
+    <string name="grafico_fechas">Fechas</string>
+    <string name="grafico_peso">Peso (kg)</string>
+    
+    <string name="rate">Si has disfrutado con Control tu peso!!!, por favor tómese un momento para evaluarlo. Gracias por su apoyo!</string>
+    <string name="rate_later">Luego</string>
+    <string name="rate_no">No, gracias</string>
+    <string name="rate_rate">Evaluar Controla tu Peso!!!</string>
+
+    <string name="texto_perfil_yo">Yo</string>
+    <string name="texto_perfil_ibm_1">Tu IMC es</string>
+    <string name="texto_perfil_ibm_2">$1</string>
+    <string name="texto_perfil_ibm_3">con</string>
+    <string name="texto_perfil_ibm_4">$2"</string>
+
+    <string name="texto_perfil_ibm_fila1_valores">Menos de 14</string>
+    <string name="texto_perfil_ibm_fila1_descripcion">Demasiado delgado, desnutrido</string>
+
+    <string name="texto_perfil_ibm_fila2_valores">Entre 15 y 17</string>
+    <string name="texto_perfil_ibm_fila2_descripcion">Delgado, leve desnutrición</string>
+
+    <string name="texto_perfil_ibm_fila3_valores">Entre 18 y 26</string>
+    <string name="texto_perfil_ibm_fila3_descripcion">Adecuado, sin riesgos</string>
+
+    <string name="texto_perfil_ibm_fila4_valores">Entre 27 y 32</string>
+    <string name="texto_perfil_ibm_fila4_descripcion">Excedido de peso, en riesgo</string>
+
+    <string name="texto_perfil_ibm_fila5_valores">Entre 33 y 39</string>
+    <string name="texto_perfil_ibm_fila5_descripcion">Obeso, serio riesgo</string>
+
+    <string name="texto_perfil_ibm_fila6_valores">Más de 40</string>
+    <string name="texto_perfil_ibm_fila6_descripcion">Demasiado obeso, muy serio riesgo</string>
+    <string name="imc">IMC:</string>
+    <string name="solo_peso">Peso</string>
+    <string name="solo_imc">IMC</string>
+    <string name="agregar">Agregar</string>
+</resources>

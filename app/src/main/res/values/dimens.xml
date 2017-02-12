@@ -1,0 +1,90 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="tab_max_width">264dp</dimen>
+    <dimen name="tab_padding_bottom">16dp</dimen>
+    <dimen name="tab_label">14sp</dimen>
+    <dimen name="custom_tab_layout_height">72dp</dimen>
+
+
+
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!-- <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen> -->
+    <dimen name="indicator_right_padding">10.0dip</dimen>
+    <dimen name="indicator_corner_radius">12.0dip</dimen>
+    <dimen name="indicator_internal_padding">4.0dip</dimen>
+    <dimen name="header_footer_left_right_padding">24.0dip</dimen>
+    <dimen name="header_footer_top_bottom_padding">12.0dip</dimen>
+    <dimen name="com_facebook_usersettingsfragment_profile_picture_width">64.0dip</dimen>
+    <dimen name="com_facebook_usersettingsfragment_profile_picture_height">64.0dip</dimen>
+    <dimen name="com_facebook_loginview_padding_left">42.0dip</dimen>
+    <dimen name="com_facebook_loginview_padding_right">0.0dip</dimen>
+    <dimen name="com_facebook_loginview_padding_top">0.0dip</dimen>
+    <dimen name="com_facebook_loginview_padding_bottom">0.0dip</dimen>
+    <dimen name="com_facebook_loginview_width">205.0dip</dimen>
+    <dimen name="com_facebook_loginview_height">44.0dip</dimen>
+    <dimen name="com_facebook_loginview_text_size">16.0sp</dimen>
+    <dimen name="com_facebook_profilepictureview_preset_size_small">50.0dip</dimen>
+    <dimen name="com_facebook_profilepictureview_preset_size_normal">100.0dip</dimen>
+    <dimen name="com_facebook_profilepictureview_preset_size_large">180.0dip</dimen>
+    <dimen name="ambilwarna_hsvHeight">240.0dip</dimen>
+    <dimen name="ambilwarna_hsvWidth">240.0dip</dimen>
+    <dimen name="ambilwarna_hueWidth">30.0dip</dimen>
+    <dimen name="ambilwarna_spacer">8.0dip</dimen>
+    <dimen name="avatarSmall">72.0dip</dimen>
+    <dimen name="avatarBig">96.0dip</dimen>
+    <dimen name="mainScreenIcon">72.0dip</dimen>
+    <dimen name="padding_small">4.0dip</dimen>
+    <dimen name="padding_medium">8.0dip</dimen>
+    <dimen name="padding_large">16.0dip</dimen>
+    <dimen name="padding_xlarge">32.0dip</dimen>
+    <dimen name="no_padding">0.0dip</dimen>
+    <dimen name="logo_size">48.0dip</dimen>
+    <dimen name="refresh_small">48.0dip</dimen>
+    <dimen name="refresh_big">72.0dip</dimen>
+    <dimen name="titlebar_icon">50.0dip</dimen>
+    <dimen name="bottombar_icon">32.0dip</dimen>
+    <dimen name="textSizeMicro">12.0sp</dimen>
+    <dimen name="textSizeSmall">14.0sp</dimen>
+    <dimen name="textSizexxxSmall">8.0sp</dimen>
+    <dimen name="textSizeMedium">18.0sp</dimen>
+    <dimen name="textSizeLarge">22.0sp</dimen>
+    <dimen name="textSizexxLarge">36.0sp</dimen>
+    <dimen name="corner">5.0dip</dimen>
+    <dimen name="profile_pic_height">260.0dip</dimen>
+    <dimen name="row_list">64.0dip</dimen>
+    <dimen name="row_spinner">42.0dip</dimen>
+    <dimen name="row_divider">2.0dip</dimen>
+    <dimen name="edit_mediano">256.0dip</dimen>
+    <dimen name="scrollbar_width">4.0dip</dimen>
+    <dimen name="spinner_height">42.0dip</dimen>
+    <dimen name="nuevo_vehiculo_label_width">102.0dip</dimen>
+    <dimen name="nuevo_vehiculo_label_height">48.0dip</dimen>
+    <dimen name="edittext_stroke">2.0dip</dimen>
+    <dimen name="popup_big_width">280.0dip</dimen>
+    <dimen name="popup_big_height">280.0dip</dimen>
+    <dimen name="popup_small_width">260.0dip</dimen>
+    <dimen name="popup_small_height">260.0dip</dimen>
+    <dimen name="radius">4.0dip</dimen>
+    <dimen name="rotate_button">42.0dip</dimen>
+    <dimen name="widget_margin">8.0dip</dimen>
+    <dimen name="missage_icona">28.0dip</dimen>
+    <dimen name="adHeight">50.0dip</dimen>
+    <dimen name="shadowHeight">2.0dip</dimen>
+    <dimen name="default_circle_indicator_radius">3.0dip</dimen>
+    <dimen name="default_circle_indicator_stroke_width">1.0dip</dimen>
+    <dimen name="default_line_indicator_line_width">12.0dip</dimen>
+    <dimen name="default_line_indicator_gap_width">4.0dip</dimen>
+    <dimen name="default_line_indicator_stroke_width">1.0dip</dimen>
+    <dimen name="default_title_indicator_clip_padding">4.0dip</dimen>
+    <dimen name="default_title_indicator_footer_line_height">2.0dip</dimen>
+    <dimen name="default_title_indicator_footer_indicator_height">4.0dip</dimen>
+    <dimen name="default_title_indicator_footer_indicator_underline_padding">20.0dip</dimen>
+    <dimen name="default_title_indicator_footer_padding">7.0dip</dimen>
+    <dimen name="default_title_indicator_text_size">15.0dip</dimen>
+    <dimen name="default_title_indicator_title_padding">5.0dip</dimen>
+    <dimen name="default_title_indicator_top_padding">7.0dip</dimen>
+</resources>

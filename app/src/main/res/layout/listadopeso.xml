@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" 
+                android:background="@color/background" 
+                android:layout_width="fill_parent" 
+                android:layout_height="fill_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <include android:id="@+id/titlebar" 
+             layout="@layout/titulobar" />
+
+    <RelativeLayout android:id="@+id/ad" 
+                    android:background="@android:color/white" 
+                    android:layout_width="fill_parent" 
+                    android:layout_height="wrap_content" 
+                    android:orientation="horizontal"
+                    android:layout_alignParentBottom="true">
+ 
+        <com.google.android.gms.ads.AdView 
+                               android:id="@+id/adView" 
+                               android:layout_width="wrap_content" 
+                               android:layout_height="wrap_content"  
+                               ads:adSize="BANNER" 
+                               ads:adUnitId="ca-app-pub-8178489486911148/2323256312" />
+                               
+    </RelativeLayout>
+    
+    <RelativeLayout android:id="@+id/abajo" 
+                    android:layout_width="fill_parent" 
+                    android:layout_height="wrap_content" 
+                    android:layout_above="@id/ad">
+
+        <TextView
+            android:id="@+id/texto_abajo"
+            style="@style/BotonSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="" />
+
+    </RelativeLayout>
+    
+    <ListView android:id="@+id/listView" 
+              android:layout_width="fill_parent" 
+              android:layout_height="fill_parent" 
+              android:dividerHeight="2dp" 
+              android:layout_weight="1.0" 
+              android:layout_below="@id/titlebar"
+              android:layout_above="@id/abajo" 
+              style="@style/Lista"
+              android:divider="#000000"/>
+
+
+    
+    <View android:layout_below="@id/titlebar" 
+          style="@style/ShadowDown" />
+    
+</RelativeLayout>

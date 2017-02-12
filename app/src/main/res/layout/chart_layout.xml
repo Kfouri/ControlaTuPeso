@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff">
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollViewFloat"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/series_layout"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentRight="true">
+        <view
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            class="im.dacer.androidcharts.LineView"
+            android:id="@+id/line_view_float"/>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/series_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ad"
+        android:layout_marginBottom="10dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/solo_peso"
+            android:textColor="#F44336"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/solo_imc"
+            android:layout_marginLeft="10dp"
+            android:textColor="#9C27B0"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout android:id="@+id/ad"
+                    android:background="@android:color/white"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentBottom="true">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-8178489486911148/2323256312" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

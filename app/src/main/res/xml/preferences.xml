@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!--
+    <PreferenceCategory android:title="@string/pre_titulo" >
+        <EditTextPreference
+                android:title="@string/pre_divisa_titulo"
+                android:summary="@string/pre_divisa_descripcion"
+                android:key="preDivisa"/>
+        <Preference android:title="Reset" 
+                    android:key="preReset" 
+                    android:summary="@string/pre_reset_descripcion" />
+        <Preference android:title="@string/pre_actualizar_titulo" 
+                    android:key="preActualizar" 
+                    android:summary="@string/pre_actualizar_descripcion" />
+    </PreferenceCategory>
+ -->
+    <PreferenceCategory android:title="@string/pre_acerca_de" >
+        <Preference android:title="@string/pre_compartir" 
+                    android:key="preCompartir"/>
+    </PreferenceCategory>       
+</PreferenceScreen>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+        <ImageView
+            android:id="@+id/imagen_perfil"
+            android:layout_width="@dimen/dim_imagen_perfil_width"
+            android:layout_height="@dimen/dim_imagen_perfil_height"
+            android:layout_marginTop="@dimen/dim_imagen_perfil_margin_top"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/icon_user"/>
+
+        <TextView
+            android:id="@+id/texto_perfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_perfil_yo"
+            android:layout_marginTop="@dimen/texto_perfil_margin_top"
+            android:layout_below="@+id/imagen_perfil"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000000"/>
+
+        <ImageView
+            android:id="@+id/imagen_editar"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/editperfil"
+            android:layout_below="@+id/imagen_perfil"
+            android:layout_toRightOf="@id/texto_perfil"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="10dp"/>
+
+        <View
+            android:id="@+id/primer_divisor"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/primer_divisor_margin_top"
+            android:background="@color/separador"
+            android:layout_marginLeft="@dimen/dim_divisor_margin_left"
+            android:layout_marginRight="@dimen/dim_divisor_margin_right"
+            android:layout_below="@+id/texto_perfil"/>
+
+        <LinearLayout
+            android:id="@+id/texto_bmi_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/texto_perfil_margin_top"
+            android:layout_below="@id/primer_divisor"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/texto_bmi_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/texto_perfil_ibm_1"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/texto_bmi_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/texto_perfil_ibm_2"
+                    android:layout_marginLeft="@dimen/dim_texto_bmi_margin_left"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/texto_bmi_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/texto_perfil_ibm_3"
+                    android:layout_marginLeft="@dimen/dim_texto_bmi_margin_left"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/texto_bmi_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/texto_perfil_ibm_4"
+                    android:layout_marginLeft="@dimen/dim_texto_bmi_margin_left"
+                    android:textStyle="bold"
+                    android:textColor="#000000"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/segundo_divisor"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/dim_segundo_divisor_margin_top"
+            android:background="@color/separador"
+            android:layout_marginLeft="@dimen/dim_divisor_margin_left"
+            android:layout_marginRight="@dimen/dim_divisor_margin_right"
+            android:layout_below="@+id/texto_bmi_layout"/>
+
+        <LinearLayout
+            android:id="@+id/fila1_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_fila_height"
+            android:orientation="horizontal"
+            android:layout_below="@+id/segundo_divisor"
+            android:layout_marginTop="@dimen/dim_separacion_entre_filas"
+            android:layout_marginLeft="@dimen/dim_fila_layout_margin_left"
+            android:layout_marginRight="@dimen/dim_fila_layout_margin_right">
+
+                <TextView
+                    android:id="@+id/bmi_valores_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/texto_perfil_ibm_fila1_valores"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:layout_weight="1"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/bmi_descripcion_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/texto_perfil_ibm_fila1_descripcion"
+                    android:layout_gravity="center"
+                    android:layout_weight="2.2"
+                    android:textColor="#000000"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fila2_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_fila_height"
+            android:orientation="horizontal"
+            android:layout_below="@+id/fila1_layout"
+            android:layout_marginTop="@dimen/dim_separacion_entre_filas"
+            android:layout_marginLeft="@dimen/dim_fila_layout_margin_left"
+            android:layout_marginRight="@dimen/dim_fila_layout_margin_right">
+
+                <TextView
+                    android:id="@+id/bmi_valores_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/texto_perfil_ibm_fila2_valores"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:layout_weight="1"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/bmi_descripcion_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/texto_perfil_ibm_fila2_descripcion"
+                    android:layout_gravity="center"
+                    android:layout_weight="2.2"
+                    android:textColor="#000000"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fila3_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_fila_height"
+            android:orientation="horizontal"
+            android:layout_below="@+id/fila2_layout"
+            android:layout_marginTop="@dimen/dim_separacion_entre_filas"
+            android:layout_marginLeft="@dimen/dim_fila_layout_margin_left"
+            android:layout_marginRight="@dimen/dim_fila_layout_margin_right">
+
+                <TextView
+                    android:id="@+id/bmi_valores_3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/texto_perfil_ibm_fila3_valores"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:layout_weight="1"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/bmi_descripcion_3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/texto_perfil_ibm_fila3_descripcion"
+                    android:layout_gravity="center"
+                    android:layout_weight="2.2"
+                    android:textColor="#000000"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fila4_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_fila_height"
+            android:orientation="horizontal"
+            android:layout_below="@+id/fila3_layout"
+            android:layout_marginTop="@dimen/dim_separacion_entre_filas"
+            android:layout_marginLeft="@dimen/dim_fila_layout_margin_left"
+            android:layout_marginRight="@dimen/dim_fila_layout_margin_right">
+
+                <TextView
+                    android:id="@+id/bmi_valores_4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/texto_perfil_ibm_fila4_valores"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:layout_weight="1"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/bmi_descripcion_4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/texto_perfil_ibm_fila4_descripcion"
+                    android:layout_gravity="center"
+                    android:layout_weight="2.2"
+                    android:textColor="#000000"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fila5_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_fila_height"
+            android:orientation="horizontal"
+            android:layout_below="@+id/fila4_layout"
+            android:layout_marginTop="@dimen/dim_separacion_entre_filas"
+            android:layout_marginLeft="@dimen/dim_fila_layout_margin_left"
+            android:layout_marginRight="@dimen/dim_fila_layout_margin_right">
+
+                <TextView
+                    android:id="@+id/bmi_valores_5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/texto_perfil_ibm_fila5_valores"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:layout_weight="1"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/bmi_descripcion_5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/texto_perfil_ibm_fila5_descripcion"
+                    android:layout_gravity="center"
+                    android:layout_weight="2.2"
+                    android:textColor="#000000"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fila6_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_fila_height"
+            android:orientation="horizontal"
+            android:layout_below="@+id/fila5_layout"
+            android:layout_marginTop="@dimen/dim_separacion_entre_filas"
+            android:layout_marginLeft="@dimen/dim_fila_layout_margin_left"
+            android:layout_marginRight="@dimen/dim_fila_layout_margin_right">
+
+                <TextView
+                    android:id="@+id/bmi_valores_6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/texto_perfil_ibm_fila6_valores"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:layout_weight="1"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/bmi_descripcion_6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/texto_perfil_ibm_fila6_descripcion"
+                    android:layout_gravity="center"
+                    android:layout_weight="2.2"
+                    android:textColor="#000000"/>
+
+        </LinearLayout>
+
+    <RelativeLayout android:id="@+id/ad"
+                    android:background="@android:color/white"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentBottom="true">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-8178489486911148/2323256312" />
+
+    </RelativeLayout>
+</RelativeLayout>

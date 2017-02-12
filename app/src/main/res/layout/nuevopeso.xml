@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background" 
+                android:layout_width="fill_parent" 
+                android:layout_height="fill_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@+id/titulobar" 
+             layout="@layout/titulobar" />
+    
+                
+    <ScrollView android:id="@+id/scrollView1" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:layout_below="@id/titulobar"
+                style="@style/Scroll">
+                
+        <RelativeLayout android:orientation="vertical" 
+                        android:id="@+id/RelativeLayout2" 
+                        android:layout_width="fill_parent" 
+                        android:layout_height="fill_parent">
+
+            <TextView android:id="@+id/Titulo"
+                      style="@style/TextoGrande"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentTop="true"
+                      android:layout_centerHorizontal="true"
+                      android:text="@string/nuevo_registro"
+                      android:textColor="@color/base1" />
+ 
+             <TextView android:id="@+id/text0"
+                      style="@style/TextoPequenyo"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="@dimen/padding_large"
+                      android:layout_marginRight="@dimen/padding_large"
+                      android:layout_marginTop="@dimen/padding_medium"
+                      android:text="@string/nuevo_peso"
+                      android:layout_below="@id/Titulo"/>
+
+            <EditText android:id="@+id/peso"
+                      style="@style/Edit"
+                      android:layout_width="100.0dip"
+                      android:layout_height="wrap_content"
+                      android:layout_centerHorizontal="true"
+                      android:layout_marginLeft="@dimen/padding_large"
+                      android:layout_marginRight="@dimen/padding_large"
+                      android:inputType="numberDecimal"
+                      android:layout_below="@id/text0" >
+                <requestFocus />
+            </EditText>
+            
+            <TextView android:id="@+id/text1"
+                      style="@style/TextoPequenyo"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="@dimen/padding_large"
+                      android:layout_marginRight="@dimen/padding_large"
+                      android:layout_marginTop="@dimen/padding_medium"
+                      android:text="@string/nuevo_descripcion"
+                      android:layout_below="@id/peso"/>
+
+            <EditText android:id="@+id/descripcion"
+                      style="@style/Edit"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_centerHorizontal="true"
+                      android:layout_marginLeft="@dimen/padding_large"
+                      android:layout_marginRight="@dimen/padding_large"
+                      android:layout_below="@id/text1"
+                      android:gravity="left"  
+                      android:layout_weight="2"
+                      android:lines="3" >
+            </EditText>
+
+            <Button
+                android:id="@+id/continuar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nuevo_guardar"
+                android:textColor="#20B2AA"
+                android:layout_below="@id/descripcion"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="20dp" />
+            
+            <Button
+                android:id="@+id/cancelar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nuevo_cancelar"
+                android:textColor="#20B2AA"
+                android:layout_below="@id/descripcion"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp" />
+        </RelativeLayout>
+    </ScrollView>
+    <View android:layout_below="@+id/titulobar" style="@style/ShadowDown" />
+</RelativeLayout>

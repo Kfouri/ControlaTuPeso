@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout android:background="@color/background" 
+                android:layout_width="fill_parent" 
+                android:layout_height="fill_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <include android:id="@+id/titulobar" 
+             layout="@layout/titulobar" />
+    
+    <RelativeLayout android:id="@+id/ad" 
+                    android:background="@android:color/white" 
+                    android:layout_width="fill_parent" 
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" 
+                    android:layout_alignParentBottom="true">
+ 
+        <com.google.android.gms.ads.AdView 
+                               android:id="@+id/adView" 
+                               android:layout_width="wrap_content" 
+                               android:layout_height="wrap_content" 
+                               ads:adSize="BANNER" 
+                               ads:adUnitId="ca-app-pub-8178489486911148/2323256312" />
+                               
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/abajo" 
+                    android:layout_width="fill_parent" 
+                    android:layout_height="wrap_content" 
+                    android:layout_above="@id/ad">
+
+        <TextView
+            android:id="@+id/texto_abajo"
+            style="@style/BotonSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="" />
+
+    </RelativeLayout>
+    
+    <LinearLayout android:orientation="vertical" 
+                  android:layout_width="fill_parent" 
+                  android:layout_height="fill_parent" 
+                  
+                  android:layout_below="@id/titulobar"
+                  android:layout_above="@id/abajo" >
+
+        <LinearLayout android:orientation="vertical" 
+                      android:layout_width="fill_parent" 
+                      android:layout_height="fill_parent" 
+                      android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" 
+                          android:orientation="horizontal" 
+                          android:id="@+id/mainscreen_main" 
+                          android:background="@drawable/background" 
+                          android:focusable="true" 
+                          android:layout_width="fill_parent" 
+                          android:layout_height="fill_parent" 
+                          android:layout_weight="1.0">
+                          
+                   <LinearLayout android:gravity="center" 
+                          android:orientation="vertical" 
+                          android:id="@+id/mainscreen_main4" 
+                          android:background="@drawable/background" 
+                          android:layout_weight="1.0" 
+                          android:focusable="true" 
+                          android:layout_width="fill_parent" 
+                          android:layout_height="fill_parent">
+
+						<TextView android:id="@+id/text0"
+									style="@style/TextoPequenyo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/padding_small"
+							        android:textStyle="bold"
+                                    android:text="@string/peso_actual"/>
+
+						<TextView android:id="@+id/peso_actual"
+                                    style="@style/TextoMuyGrande"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/padding_medium"
+                                    android:text="0"/>
+                          
+						<TextView android:id="@+id/peso_fecha"
+                                    style="@style/TextoPequenyo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/padding_small"
+                                    android:text="00/00/0000"/>
+                                                             
+						<Button android:id="@+id/registrarpeso"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="@string/registrar_peso"
+                              android:textColor="#20B2AA"/>
+   
+                   </LinearLayout>
+                   
+                   <LinearLayout android:gravity="center" 
+                          android:orientation="vertical" 
+                          android:id="@+id/mainscreen_main14" 
+                          android:background="@drawable/feedback_light" 
+                          android:layout_weight="1.0" 
+                          android:focusable="true" 
+                          android:layout_width="fill_parent" 
+                          android:layout_height="fill_parent">
+
+                          <TextView android:id="@+id/text20"
+                                    style="@style/TextoPequenyo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+							        android:textStyle="bold"
+                                    android:text="@string/imc_actual"/>
+
+                          <TextView android:id="@+id/imc_actual"
+                                    android:textSize="26sp"
+                                    android:textStyle="bold"
+                                    android:textColor="#000000"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="0"/>
+
+                          <TextView android:id="@+id/imc_actual_texto"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    android:textColor="#000000"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:text=""/>
+                          
+		                   <LinearLayout android:gravity="center" 
+		                          android:orientation="horizontal" 
+		                          android:id="@+id/mainscreen_main5" 
+		                          android:background="@drawable/background" 
+		                          android:focusable="true" 
+		                          android:layout_width="fill_parent" 
+		                          android:layout_height="fill_parent" 
+		                          android:layout_weight="1.0">
+
+		                          <LinearLayout
+		                              android:id="@+id/mainscreen_main15"
+		                              android:layout_width="fill_parent"
+		                              android:layout_height="fill_parent"
+		                              android:layout_weight="1.0"
+		                              android:background="@drawable/background"
+		                              android:focusable="true"
+		                              android:gravity="center|right"
+		                              android:orientation="vertical" >
+		                       		                          
+			                          <TextView android:id="@+id/fila11"
+			                                    android:textSize="9sp"
+			                                    android:layout_width="wrap_content"
+			                                    android:layout_height="wrap_content"
+			                                    android:text="@string/fila11"
+			                                    android:textColor="#000000"/>
+			                          <TextView android:id="@+id/fila21"
+			                                    android:textSize="9sp"
+			                                    android:layout_width="wrap_content"
+			                                    android:layout_height="wrap_content"
+			                                    android:text="@string/fila21"
+			                                    android:textColor="#000000"/>
+			                          <TextView android:id="@+id/fila31"
+			                                    android:textSize="9sp"
+			                                    android:layout_width="wrap_content"
+			                                    android:layout_height="wrap_content"
+			                                    android:text="@string/fila31"
+			                                    android:textColor="#000000"/>
+			                          <TextView android:id="@+id/fila41"
+			                                    android:textSize="9sp"
+			                                    android:layout_width="wrap_content"
+			                                    android:layout_height="wrap_content"
+			                                    android:text="@string/fila41"
+			                                    android:textColor="#000000"/>
+			                          <TextView android:id="@+id/fila51"
+			                                    android:textSize="9sp"
+			                                    android:layout_width="wrap_content"
+			                                    android:layout_height="wrap_content"
+			                                    android:text="@string/fila51"
+			                                    android:textColor="#000000"/>
+			                          <TextView android:id="@+id/fila61"
+			                                    android:textSize="9sp"
+			                                    android:layout_width="wrap_content"
+			                                    android:layout_height="wrap_content"
+			                                    android:text="@string/fila61"
+			                                    android:textColor="#000000"/>
+			                          <TextView android:id="@+id/fila71"
+			                                    android:textSize="9sp"
+			                                    android:layout_width="wrap_content"
+			                                    android:layout_height="wrap_content"
+			                                    android:text="@string/fila71"
+			                                    android:textColor="#000000"/>
+			                      </LinearLayout>
+
+		                          <LinearLayout
+		                              android:id="@+id/mainscreen_main16"
+		                              android:layout_width="fill_parent"
+		                              android:layout_height="fill_parent"
+		                              android:layout_weight="1.0"
+		                              android:background="@drawable/background"
+		                              android:focusable="true"
+		                              android:gravity="center|left"
+		                              android:orientation="vertical"
+		                              android:layout_marginLeft="@dimen/padding_small" >
+		                       		                          
+			                          <TextView android:id="@+id/fila12"
+			                                    android:textSize="9sp"
+			                                    android:layout_width="wrap_content"
+			                                    android:layout_height="wrap_content"
+			                                    android:text="@string/fila12"
+			                                    android:textColor="#000000"/>
+			                          <TextView android:id="@+id/fila22"
+			                                    android:textSize="9sp"
+			                                    android:layout_width="wrap_content"
+			                                    android:layout_height="wrap_content"
+			                                    android:text="@string/fila22"
+			                                    android:textColor="#000000"/>
+			                          <TextView android:id="@+id/fila32"
+			                                    android:textSize="9sp"
+			                                    android:layout_width="wrap_content"
+			                                    android:layout_height="wrap_content"
+			                                    android:text="@string/fila32"
+			                                    android:textColor="#000000"/>
+			                          <TextView android:id="@+id/fila42"
+			                                    android:textSize="9sp"
+			                                    android:layout_width="wrap_content"
+			                                    android:layout_height="wrap_content"
+			                                    android:text="@string/fila42"
+			                                    android:textColor="#000000"/>
+			                          <TextView android:id="@+id/fila52"
+			                                    android:textSize="9sp"
+			                                    android:layout_width="wrap_content"
+			                                    android:layout_height="wrap_content"
+			                                    android:text="@string/fila52"
+			                                    android:textColor="#000000"/>
+			                          <TextView android:id="@+id/fila62"
+			                                    android:textSize="9sp"
+			                                    android:layout_width="wrap_content"
+			                                    android:layout_height="wrap_content"
+			                                    android:text="@string/fila62"
+			                                    android:textColor="#000000"/>
+			                          <TextView android:id="@+id/fila72"
+			                                    android:textSize="9sp"
+			                                    android:layout_width="wrap_content"
+			                                    android:layout_height="wrap_content"
+			                                    android:text="@string/fila72"
+			                                    android:textColor="#000000"/>
+			                      </LinearLayout>			                      
+                          </LinearLayout>
+                   </LinearLayout>
+                   
+                   
+                   <LinearLayout android:gravity="center" 
+                          android:orientation="vertical" 
+                          android:id="@+id/mainscreen_main17" 
+                          android:background="@drawable/background" 
+                          android:focusable="true" 
+                          android:layout_width="fill_parent" 
+                          android:layout_height="fill_parent" 
+                          android:layout_weight="1.0">
+
+                          <TextView android:id="@+id/text10"
+                                    style="@style/TextoPequenyo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/padding_small"
+							        android:textStyle="bold"
+                                    android:text="@string/objetivo_actual"/>
+
+                          <TextView android:id="@+id/objetivo_actual"
+                                    style="@style/TextoMuyGrande"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/padding_medium"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="0"/>
+
+                          <TextView android:id="@+id/objetivo_fecha"
+                                    style="@style/TextoPequenyo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/padding_small"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="00/00/0000"/>
+                          
+                      <Button android:id="@+id/registrarobjetivo"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="@string/registrar_objetivo"
+                              android:textColor="#20B2AA"/>
+    
+                   </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+      
+        <LinearLayout android:orientation="vertical" 
+                      android:layout_width="fill_parent" 
+                      android:layout_height="fill_parent" 
+                      android:layout_weight="1.0">
+
+                <TextView
+                     android:id="@+id/texto_abajo2"
+                     style="@style/BotonSmall"
+                     android:layout_width="fill_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_centerHorizontal="true"
+                     android:text="Historial" />
+               
+                <ListView
+                       android:id="@+id/listView1"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent" >
+                </ListView>
+
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_below="@+id/titulobar" style="@style/ShadowDown" />
+</RelativeLayout>

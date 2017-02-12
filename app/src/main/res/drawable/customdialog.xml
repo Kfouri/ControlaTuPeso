@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/background" />
+            <padding android:left="@dimen/padding_medium" android:top="@dimen/padding_medium" android:right="@dimen/padding_medium" android:bottom="@dimen/padding_medium" />
+        </shape>
+    </item>
+</selector>

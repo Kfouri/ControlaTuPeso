@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background" 
+                android:layout_width="fill_parent" 
+                android:layout_height="fill_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <include android:id="@+id/titulobar" 
+             layout="@layout/titulobar" />
+    
+    <RelativeLayout android:id="@+id/ad" 
+                    android:background="@android:color/white" 
+                    android:layout_width="fill_parent" 
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentBottom="true">
+ 
+        <com.google.android.gms.ads.AdView 
+                               android:id="@+id/adView" 
+                               android:layout_width="wrap_content" 
+                               android:layout_height="wrap_content" 
+                               ads:adSize="BANNER" 
+                               ads:adUnitId="ca-app-pub-8178489486911148/2323256312" />
+                               
+    </RelativeLayout>
+
+    <LinearLayout android:orientation="vertical" 
+                  android:layout_width="fill_parent" 
+                  android:layout_height="fill_parent" 
+                  android:layout_margin="1.0dip" 
+                  android:layout_below="@id/titulobar">
+
+        <LinearLayout android:orientation="horizontal" 
+                      android:layout_width="fill_parent" 
+                      android:layout_height="fill_parent" 
+                      android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" 
+                          android:orientation="vertical" 
+                          android:id="@+id/mainscreen_main" 
+                          android:background="@drawable/background" 
+                          android:paddingLeft="10.0dip" 
+                          android:paddingRight="5.0dip" 
+                          android:focusable="true" 
+                          android:layout_width="fill_parent" 
+                          android:layout_height="fill_parent" 
+                          android:layout_weight="1.0">
+                <ImageView android:layout_gravity="center" 
+                           android:id="@+id/imagePrincipal" 
+                           android:background="@drawable/bascula2" 
+                           android:layout_width="@dimen/mainScreenIcon" 
+                           android:layout_height="@dimen/mainScreenIcon" />
+                 <TextView android:textSize="@dimen/textSizeMedium" 
+                           android:gravity="center" 
+                           android:id="@+id/textView2" 
+                           android:layout_width="fill_parent" 
+                           android:layout_height="wrap_content" 
+                           android:text="@string/principal" 
+                           style="@style/TextoMedio" />
+            </LinearLayout>
+             
+            <LinearLayout android:gravity="center" 
+                          android:orientation="vertical" 
+                          android:id="@+id/mainscreen_health" 
+                          android:background="@drawable/background" 
+                          android:paddingLeft="10.0dip" 
+                          android:paddingRight="5.0dip" 
+                          android:focusable="true" 
+                          android:layout_width="fill_parent" 
+                          android:layout_height="fill_parent" 
+                          android:layout_weight="1.0">
+                <ImageView android:layout_gravity="center" 
+                           android:id="@+id/ImageGrafico" 
+                           android:background="@drawable/market"
+                           android:layout_width="@dimen/mainScreenIcon" 
+                           android:layout_height="@dimen/mainScreenIcon" />
+                <TextView android:textSize="@dimen/textSizeMedium" 
+                          android:gravity="center" 
+                          android:id="@+id/TextView01" 
+                          android:layout_width="fill_parent" 
+                          android:layout_height="wrap_content" 
+                          android:text="@string/graficos" 
+                          style="@style/TextoMedio" />
+            </LinearLayout>
+   
+        </LinearLayout>
+
+        
+        <LinearLayout android:orientation="horizontal" 
+                      android:layout_width="fill_parent" 
+                      android:layout_height="fill_parent" 
+                      android:layout_weight="1.0">
+            <LinearLayout android:gravity="top" 
+                          android:orientation="vertical" 
+                          android:id="@+id/mainscreen_historico" 
+                          android:background="@drawable/background" 
+                          android:paddingLeft="10.0dip" 
+                          android:paddingRight="5.0dip" 
+                          android:focusable="true" 
+                          android:layout_width="fill_parent" 
+                          android:layout_height="fill_parent" 
+                          android:layout_weight="1.0">
+                <ImageView android:layout_gravity="center" 
+                           android:id="@+id/historico" 
+                           android:background="@drawable/listado" 
+                           android:layout_width="@dimen/mainScreenIcon" 
+                           android:layout_height="@dimen/mainScreenIcon" />
+                <TextView android:textSize="@dimen/textSizeMedium" 
+                          android:gravity="center" 
+                          android:id="@+id/TextView103" 
+                          android:layout_width="fill_parent" 
+                          android:layout_height="wrap_content" 
+                          android:text="@string/lishistorico" 
+                          style="@style/TextoMedio" />
+            </LinearLayout>
+            <LinearLayout android:gravity="top" 
+                          android:orientation="vertical" 
+                          android:id="@+id/mainscreen_perfil" 
+                          android:background="@drawable/background" 
+                          android:paddingLeft="5.0dip" 
+                          android:paddingRight="10.0dip" 
+                          android:focusable="true" 
+                          android:layout_width="fill_parent" 
+                          android:layout_height="fill_parent" 
+                          android:layout_weight="1.0">
+
+                <ImageView android:layout_gravity="center" 
+                           android:id="@+id/ImagePerfil" 
+                           android:background="@drawable/perfil" 
+                           android:layout_width="@dimen/mainScreenIcon" 
+                           android:layout_height="@dimen/mainScreenIcon" />
+                <TextView android:textSize="@dimen/textSizeMedium" 
+                          android:gravity="center" 
+                          android:id="@+id/TextView04" 
+                          android:layout_width="fill_parent" 
+                          android:layout_height="wrap_content" 
+                          android:text="@string/perfil" 
+                          style="@style/TextoMedio" />
+
+            </LinearLayout>
+        </LinearLayout>
+        
+        
+        
+        
+        
+        
+        
+        
+        <LinearLayout android:orientation="horizontal" 
+                      android:layout_width="fill_parent" 
+                      android:layout_height="fill_parent" 
+                      android:layout_weight="1.0">
+            <LinearLayout android:gravity="top" 
+                          android:orientation="vertical" 
+                          android:id="@+id/mainscreen_logros" 
+                          android:background="@drawable/background" 
+                          android:paddingLeft="10.0dip" 
+                          android:paddingRight="5.0dip" 
+                          android:focusable="true" 
+                          android:layout_width="fill_parent" 
+                          android:layout_height="fill_parent" 
+                          android:layout_weight="1.0">
+                <ImageView android:layout_gravity="center" 
+                           android:id="@+id/ImageLogros" 
+                           android:background="@drawable/copa4" 
+                           android:layout_width="@dimen/mainScreenIcon" 
+                           android:layout_height="@dimen/mainScreenIcon" />
+                <TextView android:textSize="@dimen/textSizeMedium" 
+                          android:gravity="center" 
+                          android:id="@+id/TextView03" 
+                          android:layout_width="fill_parent" 
+                          android:layout_height="wrap_content" 
+                          android:text="@string/logros" 
+                          style="@style/TextoMedio" />
+            </LinearLayout>
+            <LinearLayout android:gravity="top" 
+                          android:orientation="vertical" 
+                          android:id="@+id/mainscreen_preferences" 
+                          android:background="@drawable/background" 
+                          android:paddingLeft="5.0dip" 
+                          android:paddingRight="10.0dip" 
+                          android:focusable="true" 
+                          android:layout_width="fill_parent" 
+                          android:layout_height="fill_parent" 
+                          android:layout_weight="1.0">
+                <ImageView android:layout_gravity="center" 
+                           android:id="@+id/ImagePreferencias" 
+                           android:background="@drawable/ico_preferencias" 
+                           android:layout_width="@dimen/mainScreenIcon" 
+                           android:layout_height="@dimen/mainScreenIcon" />
+                <TextView android:textSize="@dimen/textSizeMedium" 
+                          android:gravity="center" 
+                          android:id="@+id/TextView05" 
+                          android:layout_width="fill_parent" 
+                          android:layout_height="wrap_content" 
+                          android:text="@string/preferencias" 
+                          style="@style/TextoMedio" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_below="@+id/titulobar" style="@style/ShadowDown" />
+</RelativeLayout>

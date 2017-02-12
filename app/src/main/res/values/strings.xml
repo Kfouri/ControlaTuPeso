@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="MyMaterialTheme" parent="MyMaterialTheme.Base">
+
+    </style>
+
+    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+
+    <string name="name_app">Control your weight</string>
+    <string name="version">LITE</string>
+    <string name="solo_version_pro">Only available in Pro version</string>
+    
+    <string name="principal">Add weight</string>
+    <string name="logros">Goal</string>
+    <string name="preferencias">Settings</string>
+    <string name="crear_perfil">Create a Profile...</string>
+    <string name="perfil">Profile</string>
+    <string name="editar_perfil">Edit Profile</string>
+    <string name="guardar">Save</string>
+    <string name="cancelar">Cancel</string>
+    
+    <string name="deja_titulo">Control your weight</string>
+    <string name="continuar">Continue...</string>
+    <string name="tus_datos">Your Dates...</string>
+    <string name="alias">Nick</string>
+    <string name="altura">Current Height in cm</string>
+    <string name="peso">Current weight in kg</string>
+    <string name="sexo">Gender</string>
+    <string name="edad">Age</string>
+    <string name="error_alias">Error, you must indicate your Nick</string>
+    <string name="error_altura">Error, you must indicate your current height in centimeters. (eg 160)</string>
+    <string name="error_peso">Error, you must indicate your weight in kilograms. (eg 60)</string>
+    <string name="error_edad">Error, must indicate your age. (eg 40)</string>
+    <string name="graficos">Chart</string>
+    <string name="imagen">You can change your image</string>
+    
+    <string name="registrar_peso">New Weight</string>
+    <string name="registrar_objetivo">New Goal</string>
+    <string name="peso_actual">Current Weight</string>
+    <string name="objetivo_actual">Current Goal</string>
+    <string name="imc_actual">Current IMC</string>
+    
+    <string name="fila11">Less than 16.4</string>
+    <string name="fila12">Thinness III</string>
+    <string name="fila21">16.5-18.4</string>
+    <string name="fila22">Thinness II</string>
+    <string name="fila31">18.5-24.9</string>
+    <string name="fila32">Normal</string>
+    <string name="fila41">25-29.9</string>
+    <string name="fila42">Overweight</string>
+    <string name="fila51">30-34.9</string>
+    <string name="fila52">Overweight I</string>    
+    <string name="fila61">35-39.9</string>
+    <string name="fila62">Overweight II</string>
+    <string name="fila71">More than 40</string>
+    <string name="fila72">Overweight III</string>
+    <string name="nuevo_registro">New Weight</string>
+    <string name="nuevo_peso">New Weight in kg</string>
+    <string name="nuevo_descripcion">Observation</string>
+    <string name="nuevo_guardar">Save</string>
+    <string name="nuevo_cancelar">Cancel</string>
+    <string name="proximamente">Coming soon...</string>
+    <string name="nuevo_objetivo">New Goal</string>
+    <string name="nuevo_objetivo_fecha">Goals date</string>
+    <string name="lishistorico">List of Weight</string>
+    
+    
+    <string name="pre_titulo">Preferences</string>
+        <string name="pre_acerca_de">About...</string>
+    <string name="pre_compartir">Share Application</string>
+    <string name="pre_compartir_apli">DOWNLOAD this application and control your weight daily...</string>
+    <string name="prin_comp_titulo">Control Your Weight</string>
+    <string name="action_settings">Action</string>
+    
+    <string name="grafico_titulo">Weight Chart</string>
+    <string name="grafico_fechas">Dates</string>
+    <string name="grafico_peso">Weight (kg)</string>
+    
+    <string name="rate">If you enjoy using Control your weight, please take a moment to rate it. Thanks for your support!</string>
+    <string name="rate_later">Remind me later</string>
+    <string name="rate_no">No, thanks</string>
+    <string name="rate_rate">Rate Control your weight</string>
+    <string name="texto_perfil_yo">Me</string>
+    <string name="texto_perfil_ibm_1">Your BMI is</string>
+    <string name="texto_perfil_ibm_2">$1</string>
+    <string name="texto_perfil_ibm_3">at</string>
+    <string name="texto_perfil_ibm_4">$2"</string>
+
+    <string name="texto_perfil_ibm_fila1_valores">Less than 14</string>
+    <string name="texto_perfil_ibm_fila1_descripcion">Too thin, undernourished</string>
+
+    <string name="texto_perfil_ibm_fila2_valores">From 15 to 17</string>
+    <string name="texto_perfil_ibm_fila2_descripcion">Slightly thin, mild malnutrition</string>
+
+    <string name="texto_perfil_ibm_fila3_valores">From 18 to 26</string>
+    <string name="texto_perfil_ibm_fila3_descripcion">Adequate, safe</string>
+
+    <string name="texto_perfil_ibm_fila4_valores">From 27 to 32</string>
+    <string name="texto_perfil_ibm_fila4_descripcion">Exceeded weight, at risk</string>
+
+    <string name="texto_perfil_ibm_fila5_valores">From 33 to 39</string>
+    <string name="texto_perfil_ibm_fila5_descripcion">Obese, at serious risk</string>
+
+    <string name="texto_perfil_ibm_fila6_valores">More than 40</string>
+    <string name="texto_perfil_ibm_fila6_descripcion">Too obese, at very serious risk</string>
+    <string name="imc">BMI:</string>
+    <string name="solo_peso">Weight</string>
+    <string name="solo_imc">BMI</string>
+    <string name="agregar">Add</string>
+</resources>

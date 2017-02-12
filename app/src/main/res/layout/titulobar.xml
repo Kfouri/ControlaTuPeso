@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/gradient_title" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" 
+                  android:id="@+id/back" 
+                  android:padding="0.0dip" 
+                  android:layout_width="wrap_content" 
+                  android:layout_height="wrap_content" 
+                  style="@style/BotonImagenDark">
+                  <!-- 
+        <ImageView android:id="@+id/backArrow" 
+                   android:layout_width="wrap_content" 
+                   android:layout_height="fill_parent" 
+                   android:src="@drawable/ic_ab_back_holo_dark" />
+                    -->
+        <ImageView android:layout_width="36.0dip" 
+                   android:layout_height="36.0dip" 
+                   android:src="@drawable/bascula" 
+                   android:scaleType="centerInside" />
+        <TextView android:textSize="@dimen/textSizeMedium" 
+                           android:gravity="center" 
+                           android:id="@+id/textView2" 
+                           android:layout_width="fill_parent" 
+                           android:layout_height="wrap_content" 
+                           android:text="@string/deja_titulo" 
+                           style="@style/TextoMedio" />
+    </LinearLayout>
+    <View android:background="#22ffffff" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+</RelativeLayout>

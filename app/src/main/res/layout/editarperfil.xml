@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background" 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+                
+    <ScrollView android:id="@+id/scrollView1" 
+                android:layout_width="match_parent" 
+                android:layout_height="wrap_content"
+                style="@style/Scroll">
+                
+        <RelativeLayout android:orientation="vertical" 
+                        android:id="@+id/RelativeLayout2" 
+                        android:layout_width="match_parent" 
+                        android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/actionbar"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView android:id="@+id/txt_texto"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:textSize="25sp"
+                          android:text="@string/editar_perfil"
+                          android:textColor="#FFFFFF"
+                          android:padding="10sp"
+                          android:textStyle="bold"
+                          android:typeface="serif"/>
+
+            </LinearLayout>
+
+
+             <TextView android:id="@+id/text0"
+                      style="@style/TextoPequenyo"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="@dimen/padding_large"
+                      android:layout_marginRight="@dimen/padding_large"
+                      android:layout_marginTop="30dp"
+                      android:text="@string/alias"
+                      android:layout_below="@id/layout1"/>
+
+            <EditText android:id="@+id/alias"
+                      style="@style/Edit"
+                      android:layout_width="200.0dip"
+                      android:layout_height="wrap_content"
+                      android:layout_centerHorizontal="true"
+                      android:layout_marginLeft="@dimen/padding_large"
+                      android:layout_marginRight="@dimen/padding_large"
+
+                      android:layout_below="@id/text0" >
+                <requestFocus />
+            </EditText>
+            
+            <TextView android:id="@+id/text1"
+                      style="@style/TextoPequenyo"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="@dimen/padding_large"
+                      android:layout_marginRight="@dimen/padding_large"
+                      android:layout_marginTop="@dimen/padding_medium"
+                      android:text="@string/altura"
+                      android:layout_below="@id/alias"/>
+
+            <EditText android:id="@+id/altura"
+                      style="@style/Edit"
+                      android:layout_width="80.0dip"
+                      android:layout_height="wrap_content"
+                      android:layout_centerHorizontal="true"
+                      android:layout_marginLeft="@dimen/padding_large"
+                      android:layout_marginRight="@dimen/padding_large"
+                      android:inputType="number"
+                      android:layout_below="@id/text1" 
+                      android:clickable="false" 
+                      android:cursorVisible="false" 
+                      android:focusable="false" 
+                      android:focusableInTouchMode="false">
+            </EditText>
+
+              <Button
+                  android:id="@+id/guardar"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentRight="true"
+                  android:layout_below="@id/altura"
+                  android:text="@string/guardar"
+                  android:background="@drawable/btn_bg"
+                  android:textColor="#FFFFFF"
+                  android:layout_marginTop="20dp"
+                  android:layout_marginRight="10dp"
+                  android:paddingLeft="10dp"
+                  android:paddingRight="10dp"/>
+              
+              <Button
+                  android:id="@+id/cancelar"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentLeft="true"
+                  android:layout_below="@id/altura"
+                  android:text="@string/cancelar"
+                  android:background="@drawable/btn_bg"
+                  android:textColor="#FFFFFF"
+                  android:layout_marginTop="20dp"
+                  android:layout_marginLeft="10dp"
+                  android:paddingLeft="10dp"
+                  android:paddingRight="10dp"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
